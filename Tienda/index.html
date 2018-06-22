@@ -1,0 +1,194 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tienda</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/estilos.css">
+<link href="https://fonts.googleapis.com/css?family=Baloo+Paaji" rel="stylesheet">
+</head>
+
+<body>
+<div class=" principal">
+	<div class="cabecera">
+		
+    	<div class="container" id="logo">
+			<div class="row">
+				<div class="col-md-auto" id="titulo"><h1>Mi Carrito Online</h1></div>
+				<div class="col-md-auto" id="imagenlogo"><img src="img/carrito.png" width="60" height="57" alt=""/></div>
+			</div>
+		</div>
+		
+		
+        <div class="container" id="panel">
+        	<div class="row" id="botones">
+            	<div class="col activo"><a href="index.html">Inicio</a></div>
+              	<div class="col boton"><a href="Productos.html">Productos</a></div>
+                <div class="col boton"><a href="Promociones.html">Promociones</a></div>
+                <div class="col boton"><a href="#">Carrito</a></div>
+                <div class="col boton"><a href="Contacto.html">Contacto</a></div>
+				<div class="col boton"><a href="#">Quienes Somos</a></div>
+            </div>
+        </div>
+		
+		
+        <div class="container" id="galeria">
+			<div class="row justify-content-center">
+				<div class="col-1"><a class="prev" onclick="plusSlides(-1)">&#10094;</a></div>
+				
+				
+				<div class="col-10">
+					<div class="imagenes transicion"> <a href="Servicios.html"><img class="img-fluid" src="img/comida1.jpg" width="900" height="479" alt=""/></a>
+					</div>
+					<div class="imagenes transicion"> <a href="Codigos.html"><img class="img-fluid" src="img/comida2.jpg" width="900" height="479" alt=""/></a>
+					</div>
+					<div class="imagenes transicion"> <a href="Facturas.html"><img class="img-fluid" src="img/comida3.jpg" width="900" height="479" alt=""/></a>
+					</div>
+					<div class="imagenes transicion"> <a href="Contacto.html"><img class="img-fluid" src="img/comida4.jpg" width="900" height="479" alt=""/></a>
+					</div>
+				</div>
+			
+				
+				<div class="col-1"><a class="next" onclick="plusSlides(1)">&#10095;</a></div>
+				
+			</div>
+			<div class="row justify-content-center">
+				<div style="text-align:center">
+				  <span class="dot" onclick="currentSlide(1)"></span> 
+				  <span class="dot" onclick="currentSlide(2)"></span> 
+				  <span class="dot" onclick="currentSlide(3)"></span> 
+				  <span class="dot" onclick="currentSlide(4)"></span>
+				</div>
+			</div>
+        </div>
+		
+	</div>
+	
+	
+	<div class="container" id="contenido">
+		
+		<div class="row">
+			<div class="col-3" id="costado">
+				<div class="d-flex align-items-center flex-column" id="flexcostado">
+					
+					<div class="p-2" id="titulocostado">Promociones</div>
+					
+					<div class="p-2 imagenescostado">
+						<div class="d-flex align-items-center flex-column promocion">
+							<div class="p-2 imgpromocion"><img class="img-fluid" src="img/milk.png" width="200" height="200" alt=""/></div>
+							<div class="p-2 txtpromocion">
+								<p>¡2X1!</p>
+							</div>
+						</div>
+					</div>
+					
+					
+					<div class="p-2 imagenescostado">
+						<div class="d-flex align-items-center flex-column promocion">
+							<div class="p-2 imgpromocion"><img class="img-fluid" src="img/mantequilla.png" width="200" height="200" alt=""/></div>
+							<div class="p-2 txtpromocion">
+								<p>¡3X1!</p>
+							</div>
+						</div>
+					</div>
+					
+					
+					<div class="p-2 imagenescostado">
+						<div class="d-flex align-items-center flex-column promocion">
+							<div class="p-2 imgpromocion"><img class="img-fluid" src="img/pan.png" width="200" height="200" alt=""/></div>
+							<div class="p-2 txtpromocion">
+								<p>50%</p>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			
+			
+			<div class="col-9" id="informacion">
+				
+				<div class="d-flex align-items-center flex-column" id="flexinformacion">
+					
+					<div class="p-2" id="tituloinfo">
+						<h2>¡Bienvenido!</h2>
+						<img class="img-responsive" src="img/carrito2.png" width="200" height="189" alt=""/>
+						<br><br>
+					  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis vel, fugiat rem, enim earum cumque facere sequi recusandae, rerum modi consectetur similique ducimus illo et atque sed sit cupiditate distinctio?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum laudantium a enim at aperiam, asperiores non sint consequuntur cumque. Deserunt ex illo nihil excepturi perspiciatis maiores, laborum quae eveniet dolor!</p>
+					</div>
+					
+					
+					<div class="p-2" id="cajasinfo">
+						<div class="d-flex justify-content-center flex-row" id="cajas">
+							
+							<div class="p-2 caja">
+								<div class="p-2 titulocaja">Promociones del día</div>
+								<div class="p-2 imgcaja"><img class="img-fluid" src="img/milk.png" width="200" height="200" alt=""/></div>
+							</div>
+							
+							
+							<div class="p-2 caja">
+								<div class="p-2 titulocaja">Productos del mes</div>
+								<div class="p-2 imgcaja"><img class="img-fluid" src="img/diarios.png" width="200" height="200" alt=""/></div>
+							</div>
+							
+							
+							<div class="p-2 caja">
+								<div class="p-2 titulocaja">Encuéntrenos</div>
+								<div class="p-2 imgcaja"><img class="img-fluid" src="img/locacion.png" width="200" height="200" alt=""/></div>
+							</div>
+							
+							
+						</div>
+					</div>
+					
+				</div>
+			
+			</div>
+		</div>
+		
+	</div>
+	
+	
+	
+	
+    <div class="container" id="pie">
+      <div class="row justify-content-center" id="copyright">Ana Belen Negrete &amp; Daniel Garcia © 2018</div>
+    </div>
+	
+	
+</div> 
+   
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("imagenes");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,230 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Baloo+Paaji');
+
+*{
+	margin:0px;
+	padding:0px;
+}
+
+.principal{
+	overflow: hidden;
+}
+
+/*LOGO*/
+#logo{
+	width: 100%;
+	height: 60px;
+	margin: 30px auto;
+}
+
+#titulo{
+	height: 100%;
+	font-family: 'Baloo Paaji', cursive;
+	color: red;
+	font-size: 1.5em;
+	padding-top: 6px;
+}
+
+#imagenlogo{
+	height: 100%;
+}
+
+
+
+/*MENU*/
+#panel{
+	/*width: 960px;*/
+	height: 40px;
+	margin: 50px auto;
+	position: relative;
+	z-index: 2;
+}
+
+.boton, .activo{
+	/*width: 192px;*/
+	height: 100%;
+	text-align: center;
+	line-height: 40px;
+	font-weight: bold;
+}
+
+.activo{
+	background-color: rgba(131,6,6,1.00);
+}
+
+.boton{
+	background-color: rgba(175,11,11,1.00);
+}
+
+.boton a, .activo a{
+	color: white;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-decoration:none;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.boton:hover, .activo:hover{
+	background-color: rgba(131,6,6,1.00);
+}
+
+/*#submenu{
+	border: solid 1px black;
+}
+
+#botones #submenu{
+	display: none;
+}
+
+#botones .col:hover #submenu{
+	display: block;
+}
+
+.submenu{
+	height: 100%;
+	background-color: rgba(175,11,11,1.00);
+	line-height: 40px;
+	text-align: center;
+}
+
+.submenu:hover{
+	background-color: rgba(99,5,5,1.00);
+}*/
+
+
+
+
+/*CONTENIDO*/
+
+#contenido{
+	margin-top: 70px;
+}
+
+/*COSTADO*/
+
+#costado{
+	/*border: solid 1px black;*/
+}
+
+#flexcostado{
+	/*border: solid 1px black;*/
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.32);
+	background-image: -webkit-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(240,240,240,1.00) 100%,rgba(0,0,0,1.00) 100%);
+	background-image: -moz-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(240,240,240,1.00) 100%,rgba(0,0,0,1.00) 100%);
+	background-image: -o-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(240,240,240,1.00) 100%,rgba(0,0,0,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(255,255,255,1.00) 0%,rgba(240,240,240,1.00) 100%,rgba(0,0,0,1.00) 100%);
+}
+
+#titulocostado{
+	width: 100%;
+	background-color: rgba(175,11,11,1.00);
+	line-height: 60px;
+	font-weight: bold;
+	text-align: center;
+	color: white;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 1.5em;
+}
+
+
+.promocion{
+	transition: all 0.4s ease-in-out;
+	color: red;
+}
+
+.promocion:hover{
+	transform: scale(1.1);
+	cursor: pointer;
+	color: darkgreen;
+}
+
+.txtpromocion{
+	font-size: 1.5em;
+	font-weight: bold;
+	font-family: 'Baloo Paaji', cursive;
+}
+
+
+
+
+/*INFORMACION*/
+
+#productos{
+	/*border: solid 1px black;*/
+}
+
+#flexproductos{
+	/*border: solid 1px black;*/
+	height: auto; max-height: 970px;
+	overflow: auto;
+}
+
+
+/*CAJAS*/
+
+.cajasinfo{
+	/*border: solid 1px black;*/
+	margin-top: 20px;
+	width: 100%;
+}
+
+.cajas{
+	/*border: solid 1px black;*/
+}
+
+.caja{
+	/*border: solid 1px black*/
+	width: 100%;
+	overflow: hidden;
+	/*box-shadow: 5px 5px 10px rgba(0,0,0,0.32);
+	border-radius: 10px;*/
+	transition: all 0.4s ease-in-out;
+}
+
+.caja:hover{
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+.infocaja{
+	width: 100%;
+	text-align: center;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+.imgcaja{
+	margin: 0px 5%;
+	background-image: -webkit-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(233,233,233,1.00) 100%,rgba(0,0,0,1.00) 100%);
+	background-image: -moz-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(233,233,233,1.00) 100%,rgba(0,0,0,1.00) 100%);
+	background-image: -o-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(233,233,233,1.00) 100%,rgba(0,0,0,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(255,255,255,1.00) 0%,rgba(233,233,233,1.00) 100%,rgba(0,0,0,1.00) 100%);
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.32);
+}
+
+
+
+
+
+/*PIE*/
+
+#pie{
+	margin-top: 70px;
+}
+
+#copyright{
+	color: rgba(46,44,108,1.00);
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-align: center;
+	font-size: 0.8em;
+	line-height: 40px;
+}
+

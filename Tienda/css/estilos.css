@@ -1,0 +1,341 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Baloo+Paaji');
+
+*{
+	margin:0px;
+	padding:0px;
+}
+
+.principal{
+	overflow: hidden;
+}
+
+/*LOGO*/
+#logo{
+	width: 100%;
+	height: 60px;
+	margin: 30px auto;
+}
+
+#titulo{
+	height: 100%;
+	font-family: 'Baloo Paaji', cursive;
+	color: red;
+	font-size: 1.5em;
+	padding-top: 6px;
+}
+
+#imagenlogo{
+	height: 100%;
+}
+
+
+
+/*MENU*/
+#panel{
+	/*width: 960px;*/
+	height: 40px;
+	margin: 50px auto;
+	position: relative;
+	z-index: 2;
+}
+
+.boton, .activo{
+	/*width: 192px;*/
+	height: 100%;
+	text-align: center;
+	line-height: 40px;
+	font-weight: bold;
+}
+
+.activo{
+	background-color: rgba(131,6,6,1.00);
+}
+
+.boton{
+	background-color: rgba(175,11,11,1.00);
+}
+
+.boton a, .activo a{
+	color: white;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-decoration:none;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.boton:hover, .activo:hover{
+	background-color: rgba(131,6,6,1.00);
+}
+
+/*#submenu{
+	border: solid 1px black;
+}
+
+#botones #submenu{
+	display: none;
+}
+
+#botones .col:hover #submenu{
+	display: block;
+}
+
+.submenu{
+	height: 100%;
+	background-color: rgba(175,11,11,1.00);
+	line-height: 40px;
+	text-align: center;
+}
+
+.submenu:hover{
+	background-color: rgba(99,5,5,1.00);
+}*/
+
+
+
+
+/*GALERIA*/
+#galeria{
+	/*width: 960px;*/
+	height: auto;
+	margin: 0px auto;
+	position: relative;
+	z-index: 1;
+	/*border: solid 1px black;*/
+}
+
+.col-1{
+	text-align: center;
+	/*border: solid 1px black;*/
+	padding: 20%  0px;
+	color: red;
+}
+
+.col-10{
+	/*border: solid 1px black;*/
+	padding: 1.5% 2%;
+}
+
+.imagenes{
+	display: none;
+}
+
+.prev, .next {
+	width: auto;
+  	cursor: pointer;
+  	/*position: absolute;*/
+  	/*top: 50%;*/
+  	/*margin-top: -22px;*/
+  	/*padding: 16px;*/
+  	color: rgba(191,191,191,0.93);
+  	font-weight: bold;
+  	font-size: 35px;
+  	transition: 0.6s ease;
+  	border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.21);
+}
+
+.dot {
+  cursor:pointer;
+  height: 10px;
+  width: 10px;
+  margin: 5px 2px;
+  background-color: rgba(188,188,188,0.35);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: rgba(255,0,23,0.92);
+}
+
+.transicion {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .7} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .7} 
+  to {opacity: 1}
+}
+
+
+
+/*CONTENIDO*/
+
+#contenido{
+	margin-top: 70px;
+}
+
+/*COSTADO*/
+
+#costado{
+	/*border: solid 1px black;*/
+}
+
+#flexcostado{
+	/*border: solid 1px black;*/
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.32);
+	background-image: -webkit-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(240,240,240,1.00) 100%,rgba(0,0,0,1.00) 100%);
+	background-image: -moz-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(240,240,240,1.00) 100%,rgba(0,0,0,1.00) 100%);
+	background-image: -o-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(240,240,240,1.00) 100%,rgba(0,0,0,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(255,255,255,1.00) 0%,rgba(240,240,240,1.00) 100%,rgba(0,0,0,1.00) 100%);
+}
+
+#titulocostado{
+	width: 100%;
+	background-color: rgba(175,11,11,1.00);
+	line-height: 60px;
+	font-weight: bold;
+	text-align: center;
+	color: white;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 1.5em;
+}
+
+
+.promocion{
+	transition: all 0.4s ease-in-out;
+	color: red;
+}
+
+.promocion:hover{
+	transform: scale(1.1);
+	cursor: pointer;
+	color: darkgreen;
+}
+
+.txtpromocion{
+	font-size: 1.5em;
+	font-weight: bold;
+	font-family: 'Baloo Paaji', cursive;
+}
+
+
+
+
+/*INFORMACION*/
+
+#informacion{
+	/*border: solid 1px black;*/
+}
+
+#flexinformacion{
+	/*border: solid 1px black;*/
+}
+
+#tituloinfo{
+	width: 100%;
+}
+
+#tituloinfo h2{
+	width: 100%;
+	font-weight: bold;
+	text-align: center;
+	color: red;
+	font-family: 'Baloo Paaji', cursive;
+	font-size: 2.5em;
+}
+
+#tituloinfo img{
+	margin: 0px 35%;
+}
+
+#tituloinfo p{
+	text-align: justify;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 1.5em;
+}
+
+
+
+/*CAJAS*/
+
+#cajasinfo{
+	/*border: solid 1px black;*/
+	margin-top: 20px;
+	width: 100%;
+}
+
+#cajas{
+	/*border: solid 1px black;*/
+}
+
+.caja{
+	/*border: solid 1px black*/
+	width: 100%;
+	overflow: hidden;
+	/*box-shadow: 5px 5px 10px rgba(0,0,0,0.32);
+	border-radius: 10px;*/
+	transition: all 0.4s ease-in-out;
+}
+
+.caja:hover{
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+.titulocaja{
+	width: 100%;
+	background-color: rgba(175,11,11,1.00);
+	line-height: 60px;
+	font-weight: bold;
+	text-align: center;
+	color: white;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 1.5em;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.32);
+}
+
+.imgcaja{
+	background-image: -webkit-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(233,233,233,1.00) 100%,rgba(0,0,0,1.00) 100%);
+	background-image: -moz-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(233,233,233,1.00) 100%,rgba(0,0,0,1.00) 100%);
+	background-image: -o-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(233,233,233,1.00) 100%,rgba(0,0,0,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(255,255,255,1.00) 0%,rgba(233,233,233,1.00) 100%,rgba(0,0,0,1.00) 100%);
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.32);
+}
+
+.imgcaja img{
+	margin: 0px 10%;
+}
+
+
+/*PIE*/
+
+#pie{
+	margin-top: 70px;
+}
+
+#copyright{
+	color: rgba(46,44,108,1.00);
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-align: center;
+	font-size: 0.8em;
+	line-height: 40px;
+}
+
